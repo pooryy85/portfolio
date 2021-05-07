@@ -1,7 +1,5 @@
 *{
     box-sizing:border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html{
@@ -131,24 +129,15 @@ a:visited {
     justify-content: right;
 }
 
-#resume h2{
-    display: flex;
-    width: 100%;
-    justify-content: left;
-    padding-left: 185px;
-}
-
-.resume {
-    display: flex;
-    width: 100%;
-    justify-content: left;
-    padding-left: 185px;
-}
-
 #contact {
-    display: flex;
+    display: display;
     width: 100%;
     padding-left: 185px;
+}
+
+#contact p{
+    font-size: 1.2rem;
+    width: 400px;
 }
 
 @media only screen and (max-width: 480px) {
