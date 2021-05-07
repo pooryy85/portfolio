@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <div id="container">        
+            <header id="header">
+                <div id="banner">
+                    <h2>Poornima Madhavaprabhu
+                        <span>
+                            <nav><a href ="#aboutme">about me</a>
+                                <a href ="#projects">projects</a>
+                                <a href ="#skills">skills</a>
+                                <a href ="#resume">resume</a>
+                                <a href ="#contact">contact</a>
+                            </nav>
+                        </span>
+                    </h2>
+                </div>
+            </header>
+            <main id="main">
+                <div id="aboutme">
+                    <div>
+                        <h2>About me</h2>
+                        <p>I am Poornima Madhavaprabhu a full stack developer desinging webpages using HTML5, CSS, JavaScript.</p>
+                    </div>
+                    <div>
+                        <img src="../resources/images/IMG_7605.JPG" alt="about me image">
+                    </div>
+                </div>
+                <div id="skills">
+                    <h2>Skills</h2> 
+                    <div class="skillimages">       
+                        <img src="../resources/images/all3.png" alt="all">
+                        <img src="../resources/images/github.jpg" alt="github">
+                        <img src="../resources/images/visualstudio.jpg" alt="visualstudio">
+                    </div>
+                </div>
+                <div id="projects" >
+                    <h2>Projects</h2> 
+                    <div class="projectimages">
+                        <div>
+                            <details>
+                                <summary>Seed Guide - which shows the importance of growing plants</summary>
+                                <img src="../resources/images/seed.jpg" alt="seedguide">                          
+                            </details>       
+                        </div> 
+                        <div>
+                            <details>
+                                <summary>Chess Buddies - which shows the importance mind game Chess</summary>
+                                <img src="../resources/images/chesssport.jpg" alt="chessbuddies">
+                            </details>
+                        </div> 
+                        <div>
+                            <details>
+                                <summary>Tea Cozy</summary>
+                                <img src="../resources/images/teacozy.jpg" alt="teacozy">
+                            </details>
+                        </div>                         
+                    </div> 
+                </div>
+                <div id="resume"> 
+                    <h2>Resume</h2>
+                    <div class="resume">
+                        <p>Name: PoornimaMadhavaprabhu</p>
+                    </div>
+                </div>
+                <div id="contact">
+                    <h2>Contact</h2>
+                </div>
+            </main>
+            <footer id = "footer">
+                &copy; 2021 Poornima
+            </footer>
+            <script >               
+                             
+                function colorChange (event) {
+                    document.getElementById('banner').style.borderBottom = '5px solid rgba(' + (Math.floor(Math.random() * 256 ))+ ',' + (Math.floor(Math.random() * 256 )) + ',' + (Math.floor(Math.random() * 256 )) + ', 0.4'+ ')';
+                }
+
+                document.getElementById('banner').addEventListener("click",colorChange);
+            </script>
+        </div>
+    </body>
+</html>

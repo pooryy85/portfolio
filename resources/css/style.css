@@ -1,0 +1,165 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  }
+
+#banner {
+    padding-top: 3%;
+    padding-left: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 100px;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    background-color: grey;      
+}
+
+nav {
+    padding-right: 15%;
+    font-size: 1.2rem;
+    float: right;
+    flex-shrink: 1;
+    text-decoration: none;  
+    
+}
+
+a:hover {
+    font-size: 1.5rem;
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: capitalize;
+    opacity: 50%;
+    padding: 5px;
+    
+}
+
+a:active {
+    text-decoration: none;  
+}
+
+a:visited {
+    text-decoration: none;  
+}
+
+#aboutme {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 7%; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#aboutme p{
+    display: block;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 400px;
+}
+
+#aboutme img{
+    height: 400px;
+    width: 300px;
+    display: block;
+}
+
+#skills {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    justify-content: space-around;
+}
+
+.skillimages {
+    display: block;
+}
+
+#skills img{
+    height: 200px;
+    width: 250px;
+}
+
+#projects h2 {
+    text-indent: 185px;
+}
+
+.projectimages {
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+
+.projectimages img{
+    height: 200px;
+    width: 50px;
+    flex: 0 1 50%;
+    width: 20%;
+    position: relative;
+    margin: 1.5% 1.5%;
+    box-shadow: 3px 3px 10px black;
+}
+
+.projectimages img:hover {
+    transform: scale(2);
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    box-shadow: 3px 3px 10px black;
+}
+
+.projectimages div {
+    display: block;
+    justify-content: center;
+}
+
+.projectimages details {
+    display: flex;
+    padding-left: 200px;
+    justify-content: right;
+}
+
+#resume h2{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding-left: 185px;
+}
+
+.resume {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding-left: 185px;
+}
+
+#contact {
+    display: flex;
+    width: 100%;
+    padding-left: 185px;
+}
+
+@media only screen and (max-width: 480px) {
+    #container {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #container {
+        display: block;
+        font-size: 8px;
+    }
+}
